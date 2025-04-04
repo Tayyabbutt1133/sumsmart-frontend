@@ -21,49 +21,55 @@ export default function HeroHome() {
               className="mb-6 border-y [border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]"
               data-aos="zoom-y-out"
             >
-              <div className="-mx-0.5 flex justify-center -space-x-3">
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar01}
-                  width={32}
-                  height={32}
-                  alt="Avatar 01"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar02}
-                  width={32}
-                  height={32}
-                  alt="Avatar 01"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar03}
-                  width={32}
-                  height={32}
-                  alt="Avatar 02"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar04}
-                  width={32}
-                  height={32}
-                  alt="Avatar 03"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar05}
-                  width={32}
-                  height={32}
-                  alt="Avatar 04"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar06}
-                  width={32}
-                  height={32}
-                  alt="Avatar 05"
-                />
+              <div className="flex justify-center items-center gap-3">
+                <div className="-mx-0.5 flex justify-center -space-x-3">
+                  <Image
+                    className="box-content rounded-full border-2 border-gray-50"
+                    src={Avatar01}
+                    width={32}
+                    height={32}
+                    alt="Avatar 01"
+                  />
+                  <Image
+                    className="box-content rounded-full border-2 border-gray-50"
+                    src={Avatar02}
+                    width={32}
+                    height={32}
+                    alt="Avatar 01"
+                  />
+                  <Image
+                    className="box-content rounded-full border-2 border-gray-50"
+                    src={Avatar03}
+                    width={32}
+                    height={32}
+                    alt="Avatar 02"
+                  />
+                  <Image
+                    className="box-content rounded-full border-2 border-gray-50"
+                    src={Avatar04}
+                    width={32}
+                    height={32}
+                    alt="Avatar 03"
+                  />
+                  <Image
+                    className="box-content rounded-full border-2 border-gray-50"
+                    src={Avatar05}
+                    width={32}
+                    height={32}
+                    alt="Avatar 04"
+                  />
+                  <Image
+                    className="box-content rounded-full border-2 border-gray-50"
+                    src={Avatar06}
+                    width={32}
+                    height={32}
+                    alt="Avatar 05"
+                  />
+                </div>
+                {/* Beta Badge */}
+                <span className="ml-4 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 px-3 py-1.5 text-xs font-bold uppercase text-white shadow-lg ring-1 ring-blue-400/50 backdrop-blur-sm animate-pulse tracking-wide">
+                  🚧 Beta
+                </span>
               </div>
             </div>
             <h1
@@ -71,8 +77,9 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-             The AI Code Reviewer<br className="max-lg:hidden" />
-             You Can Trust
+              The AI Code Reviewer
+              <br className="max-lg:hidden" />
+              You Can Trust
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -80,7 +87,9 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-               SumSmart AI is your intelligent code review companion, ensuring best practices, security, and performance optimizations—so you can ship high-quality code faster.
+                SumSmart AI is your intelligent code review companion, ensuring
+                best practices, security, and performance optimizations—so you
+                can ship high-quality code faster.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,theme(colors.slate.300/.8),transparent)1]">
                 <div
@@ -88,11 +97,12 @@ export default function HeroHome() {
                   data-aos="zoom-y-out"
                   data-aos-delay={450}
                 >
-                  <Link href={'/get-reviewed'}
+                  <Link
+                    href={"/get-reviewed"}
                     className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] hover:scale-105 transition bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
                   >
                     <span className="relative inline-flex items-center">
-                    Get Your Code Reviewed Instantly 🚀{" "}
+                      Get Your Code Reviewed Instantly 🚀{" "}
                     </span>
                   </Link>
                   {/* <a
